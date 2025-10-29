@@ -1,5 +1,8 @@
 @extends('master')
 
+@section('title', 'Edit Data Pegawai')
+@section('title_content', 'Edit Data Pegawai') 
+
 @section('content')
 <div class="container mt-4">
     <div class="card shadow-lg p-4">
@@ -73,12 +76,15 @@
             </div>
 
             <div class="mb-3">
-                <la for="alamat" class="form-label">Alamat Lengkap</la" rows="3">{{ old('alamat', $employee->alamat) }}</textarea>
+                <label for="alamat" class="form-label">Alamat Lengkap</label>
+                <textarea class="form-control" id="alamat" name="alamat" rows="3">{{ old('alamat', $employee->alamat) }}</textarea>
             </div>
-                <textarea class="form-control" id="alamat" name="alamat
+            
             <div class="d-flex justify-content-end mt-4">
                 <a href="{{ route('employees.index') }}" class="btn btn-secondary me-2">Kembali</a>
-                <button type="submit" class="btn btn-success">Update Data</button>
+                <button type="submit" class="btn btn-success">
+                    <i class="fas fa-save me-1"></i> Update Data
+                </button>
             </div>
         </form>
     </div>

@@ -8,7 +8,7 @@ class Position extends Model
 {
     protected $fillable = [
         'nama_jabatan',
-        'gaji_pokok', // Sesuai dengan migrasi positions
+        'gaji_pokok', 
     ];
 
     /**

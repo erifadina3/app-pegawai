@@ -6,7 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Department extends Model
 {
-    // Nama kolom hanya 'nama_departemen' di migrasi (tanpa deskripsi)
     protected $fillable = [
         'nama_departemen',
     ];

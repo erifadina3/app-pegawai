@@ -9,7 +9,6 @@
         
         <div class="row">
             <div class="col-md-12">
-                {{-- Menggunakan class table-bordered dan table-striped untuk tampilan rapi --}}
                 <table class="table table-bordered table-striped">
                     <tr>
                         <th style="width: 25%;">Nama Lengkap</th>

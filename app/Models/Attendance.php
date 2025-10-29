@@ -6,7 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Attendance extends Model
 {
-    // Nama tabel di migrasi: 'attendance' (tanpa 's')
     protected $table = 'attendance';
 
     protected $fillable = [

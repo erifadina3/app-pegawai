@@ -14,7 +14,7 @@ class SalaryController extends Controller
     public function index()
     {
         // Menggunakan nama relasi 'employee'
-        $salaries = Salary::with('employee')->latest()->get();
+        $salaries = Salary::with('employee')->orderBy('created_at', 'asc')->get();
         return view('salaries.index', compact('salaries'));
     }
 

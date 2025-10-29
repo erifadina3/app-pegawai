@@ -14,7 +14,7 @@ class AttendanceController extends Controller
     public function index()
     {
         // Menggunakan nama relasi 'employee'
-        $attendances = Attendance::with('employee')->latest()->get();
+        $attendances = Attendance::with('employee')->orderBy('created_at', 'asc')->get();
         return view('attendance.index', compact('attendances'));
     }
 

@@ -14,7 +14,7 @@ class EmployeeController extends Controller
      */
     public function index()
     {
-      $employees = Employee::latest()->paginate(5);
+      $employees = Employee::orderBy('id', 'asc')->paginate(5);
       // Tambahkan pesan success saat redirect dari store/update/destroy
       return view('employees.index', compact('employees'));
     }

@@ -67,7 +67,7 @@ class DepartmentController extends Controller
         $department->update($validated);
         return redirect()->route('departments.index')->with('success', 'Departemen berhasil diperbarui!');
     }
-
+    
     /**
      * Remove the specified resource from storage.
      */
